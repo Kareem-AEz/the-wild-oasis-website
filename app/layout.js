@@ -19,6 +19,37 @@ export const metadata = {
 	},
 	description:
 		"Luxury cabins hotel, in the heart of the Italian Dolomites, surrounded by beautiful mountains and lush forests. Enjoy nature's beauty in your own little home away from home. The perfect spot for a peaceful, calm vacation. Welcome to paradise.",
+
+	openGraph: {
+		title: "The Wild Oasis | Welcome to paradise",
+		description:
+			"Luxury cabins hotel, in the heart of the Italian Dolomites, surrounded by beautiful mountains and lush forests. Enjoy nature's beauty in your own little home away from home. The perfect spot for a peaceful, calm vacation. Welcome to paradise.",
+		images: [
+			{
+				url: "https://the-wild-oasis-website-gold-one.vercel.app/bg.png",
+				width: 1200,
+				height: 630,
+				alt: "The Wild Oasis | Welcome to paradise",
+			},
+		],
+		type: "website",
+		url: "https://the-wild-oasis-website-gold-one.vercel.app",
+	},
+
+	twitter: {
+		card: "summary_large_image",
+		title: "The Wild Oasis | Welcome to paradise",
+		description:
+			"Luxury cabins hotel, in the heart of the Italian Dolomites, surrounded by beautiful mountains and lush forests. Enjoy nature's beauty in your own little home away from home. The perfect spot for a peaceful, calm vacation. Welcome to paradise.",
+		images: [
+			{
+				url: "https://the-wild-oasis-website-gold-one.vercel.app/bg.png",
+				width: 1200,
+				height: 630,
+				alt: "The Wild Oasis | Welcome to paradise",
+			},
+		],
+	},
 };
 
 export default function RootLayout({ children }) {
