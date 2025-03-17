@@ -42,7 +42,7 @@ function DateSelector({ cabin, settings, bookedDates }) {
 				numberOfMonths={2}
 				selected={range}
 				onSelect={setRange}
-				disabled={bookedDates}
+				disabled={[...bookedDates, new Date()]}
 				footer={
 					<div className="mt-2 flex justify-center">
 						<span className="text-accent-400 font-bold">
