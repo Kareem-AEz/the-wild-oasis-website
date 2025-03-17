@@ -5,7 +5,9 @@ function Loading() {
 		<div className="flex h-full items-center justify-center">
 			<div className="text-center">
 				<Spinner />
-				<p className="text-primary-200 mt-4 text-lg">Loading your account...</p>
+				<p className="text-primary-200 mt-4 text-lg">
+					Loading your reservations...
+				</p>
 			</div>
 		</div>
 	);
