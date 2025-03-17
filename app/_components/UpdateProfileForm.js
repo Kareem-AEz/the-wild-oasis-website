@@ -6,6 +6,7 @@ import { useFormStatus } from "react-dom";
 
 function UpdateProfileForm({ children, guest }) {
 	const [count, setCount] = useState();
+	console.log(guest.countryFlag);
 
 	return (
 		<form
@@ -35,11 +36,13 @@ function UpdateProfileForm({ children, guest }) {
 			<div className="space-y-2">
 				<div className="flex items-center justify-between">
 					<label htmlFor="nationality">Where are you from?</label>
-					<img
-						src={guest.countryFlag}
-						alt="Country flag"
-						className="h-5 rounded-sm"
-					/>
+					{guest.countryFlag && (
+						<img
+							src={guest.countryFlag}
+							alt="Country flag"
+							className="h-5 rounded-sm"
+						/>
+					)}
 				</div>
 
 				{children}
