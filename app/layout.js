@@ -1,4 +1,6 @@
 import "@/app/_styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Josefin_Sans } from "next/font/google";
 import Header from "./_components/Header";
@@ -25,6 +27,8 @@ export default function RootLayout({ children }) {
 			<body
 				className={`${josefinSans.className} bg-primary-950 text-primary-100 flex min-h-screen flex-col antialiased`}
 			>
+				<Analytics />
+				<SpeedInsights />
 				<Header />
 
 				<div className="relative grid flex-1 px-8 py-12">

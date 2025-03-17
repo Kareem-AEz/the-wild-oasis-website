@@ -138,11 +138,11 @@ export async function editReservation(formData) {
 	if (!/^[1-9][0-9]*$/.test(data.numGuests))
 		throw new Error("Invalid number of guests");
 	// Check if the observations are valid
-	if (!/^[a-zA-Z0-9\s.,!?'"()\-\n]{1,500}$/.test(data.observations))
+	if (
+		data.observations &&
+		!/^[a-zA-Z0-9\s.,!?'"()\-\n]{0,500}$/.test(data.observations)
+	)
 		throw new Error("Invalid observations");
-	// Check if the booking ID is valid
-	if (!/^[0-9a-fA-F-]{36}$/.test(bookingId))
-		throw new Error("Invalid booking ID");
 
 	// Check if booking exists
 	const { data: booking, error: bookingError } = await supabase
