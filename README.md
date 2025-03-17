@@ -154,7 +154,6 @@ the-wild-oasis/
 
 - Skeleton loading states for all async operations
 - Form validation with error handling
-- Responsive design for all screen sizes
 - Smooth transitions and animations
 - Context-based state management
 
